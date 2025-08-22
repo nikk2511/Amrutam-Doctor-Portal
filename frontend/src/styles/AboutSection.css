@@ -1,0 +1,206 @@
+/* Footer Section - Pixel Perfect Match */
+.footer-section {
+  background-color: #DBDCC4;
+  padding: 60px 0 40px;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* AMRUTAM Logo */
+.footer-logo {
+  margin-bottom: 40px;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3A643B;
+  letter-spacing: 4px;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Footer Content Grid */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer Headings */
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3A643B;
+  margin-bottom: 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contact Information */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-address {
+  font-style: normal;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Information Links */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  font-size: 16px;
+  color: #666666;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-link:hover {
+  color: #3A643B;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #3A643B;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #2F5233;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 100, 59, 0.3);
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+  }
+
+  .contact-item,
+  .contact-address,
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    padding: 40px 0 30px;
+  }
+
+  .footer-container {
+    padding: 0 15px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .footer-content {
+    gap: 30px;
+    text-align: left;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .social-icon,
+  .footer-link {
+    transition: none;
+  }
+}
+
+/* Focus States */
+.footer-link:focus,
+.social-icon:focus {
+  outline: 2px solid #3A643B;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.social-icon:focus {
+  border-radius: 50%;
+}

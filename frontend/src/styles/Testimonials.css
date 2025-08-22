@@ -1,0 +1,81 @@
+.testimonials-section {
+  background-color: #fff7e2;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 26px;
+  color: #33643c;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  margin: 8px 0 32px;
+  color: #555;
+  font-size: 16px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #fff7e2;
+  padding: 28px;
+  border-radius: 16px;
+  max-width: 360px;
+  min-height: 280px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: none;
+  opacity: 0.85;
+  transform: scale(0.90);
+  color: #33643f;
+}
+
+
+.testimonial-card.active {
+  background-color: #ffe6aa;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: scale(1.15);
+  opacity: 1;
+  z-index: 2;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.doctor-img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.doctor-info h4 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.doctor-info .stars {
+  margin-top: 4px;
+  color: #f9a825;
+  font-size: 15px;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #33643d;
+  line-height: 1.5;
+  text-align: left;
+}
