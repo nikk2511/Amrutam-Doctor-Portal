@@ -89,23 +89,25 @@ app.use((error, req, res, next) => {
   });
 });
 
-// Start server
-const PORT = process.env.PORT || 3001;
+// Start server only if not in Vercel environment
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  const PORT = process.env.PORT || 3001;
 
-const startServer = async () => {
-  try {
-    await connectDB();
-  } catch (error) {
-    console.log('Database connection failed, continuing without database...');
-  }
-  
-  app.listen(PORT, () => {
-    console.log(`🚀 Amrutam Doctor Portal API running on port ${PORT}`);
-    console.log(`📱 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
-    console.log(`🏥 Environment: ${process.env.NODE_ENV || 'development'}`);
-  });
-};
+  const startServer = async () => {
+    try {
+      await connectDB();
+    } catch (error) {
+      console.log('Database connection failed, continuing without database...');
+    }
+    
+    app.listen(PORT, () => {
+      console.log(`🚀 Amrutam Doctor Portal API running on port ${PORT}`);
+      console.log(`📱 Frontend URL: ${process.env.FRONTEND_URL || 'http://localhost:5173'}`);
+      console.log(`🏥 Environment: ${process.env.NODE_ENV || 'development'}`);
+    });
+  };
 
-startServer();
+  startServer();
+}
 
 module.exports = app;
