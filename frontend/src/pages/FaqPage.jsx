@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import '../styles/FaqPage.css';
 import appPromo from '../assets/FaqLm.png';
 import leafBg from '../assets/bkgrndleafy.png';
-import footerImage from '../assets/faqfooter.png';
+import footerImage from '../assets/faqFooter.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaSearch } from 'react-icons/fa';
 import amrutamLogo from '../assets/logo.png';
